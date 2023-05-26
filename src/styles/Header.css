@@ -8,7 +8,7 @@
     background: linear-gradient(270deg, #984343 0%, #43ceb2 100%);
     z-index: 100;
     width: 100%;
-    height: 74px;
+    height: 56px;
     border-bottom: 1px solid #dccdcd;
 }
 
@@ -27,7 +27,7 @@
 .innerSpan span a {
     text-decoration: none;
     color: black;
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

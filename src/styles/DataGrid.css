@@ -1,16 +1,18 @@
 .data-grid-container {
     position: absolute;
-    top: 4rem;
+    top: 3.5rem;
     left: 0;
 }
 
 
 .data-grid-container h1 {
     background: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
-    width: 500px;
+    width: 450px;
     padding: 10px;
     border-radius: 10px;
-    margin-left: 550px;
+    margin-left: 365px;
+    height: 30px;
+    font-size: 25px;
 }
 
 .filter-container {
@@ -41,8 +43,8 @@
 }
 
 .data-grid th {
-    font-size: 18px;
-    padding: 12px 16px;
+    font-size: 16px;
+    padding: 7px 7px;
     border: 1px solid #e0e0e0;
     text-align: left;
     background-color: #f9fafb;
@@ -51,9 +53,9 @@
 }
 
 .data-grid td {
-    padding: 12px 16px;
+    padding: 7px 7px;
     border: 1px solid #e0e0e0;
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -70,11 +72,11 @@
 
 .pagination {
     position: absolute;
-    left: 46rem;
+    left: 35rem;
 }
 
 .pagination span {
-    font-size: 25px;
+    font-size: 20px;
     padding: 10px;
 }
 
@@ -82,7 +84,7 @@ button {
     padding: 6px;
     background: linear-gradient(270deg, #984343 0%, #43ceb2 100%);
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 12px;
     cursor: pointer;
 }
 
@@ -179,10 +181,6 @@ button {
     .filter-container {
         width: 280px;
         margin-left: 47px;
-    }
-
-    .data-grid {
-        width: 50%;
     }
 
     .filter-container input[type="text"] {

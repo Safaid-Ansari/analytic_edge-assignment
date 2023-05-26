@@ -14,7 +14,7 @@ function App() {
               <DataGrid
                 name="Users"
                 endpoint="https://jsonplaceholder.typicode.com/users"
-                pageSize={4}
+                pageSize={3}
               />
             }
           ></Route>
@@ -24,7 +24,7 @@ function App() {
               <DataGrid
                 name="Posts"
                 endpoint="https://jsonplaceholder.typicode.com/posts"
-                pageSize={6}
+                pageSize={5}
               />
             }
           ></Route>
@@ -34,7 +34,7 @@ function App() {
               <DataGrid
                 name="Comments"
                 endpoint="https://jsonplaceholder.typicode.com/comments"
-                pageSize={6}
+                pageSize={5}
               />
             }
           ></Route>
@@ -44,7 +44,7 @@ function App() {
               <DataGrid
                 name="Users"
                 endpoint="https://jsonplaceholder.typicode.com/users"
-                pageSize={4}
+                pageSize={3}
               />
             }
           ></Route>
