@@ -9,14 +9,8 @@ const DataGrid = ({ endpoint, pageSize, name }) => {
   const [filterValue, setFilterValue] = useState("");
   const [sortColumn, setSortColumn] = useState("");
   const [sortDirection, setSortDirection] = useState("asc");
-  const [isMounted, setIsMounted] = useState(false);
-
   useEffect(() => {
-    if (isMounted) {
-      fetchData();
-    } else {
-      setIsMounted(true);
-    }
+    fetchData();
   }, [
     currentPage,
     searchWord,
@@ -24,10 +18,9 @@ const DataGrid = ({ endpoint, pageSize, name }) => {
     filterValue,
     sortColumn,
     sortDirection,
+    data,
   ]);
-  useEffect(() => {
-    fetchData();
-  }, []);
+
   const fetchData = () => {
     const start = (currentPage - 1) * pageSize;
     let url = `${endpoint}?_start=${start}&_limit=${pageSize}`;
