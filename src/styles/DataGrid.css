@@ -1,0 +1,219 @@
+.data-grid-container {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+}
+
+
+.data-grid-container h1 {
+    background: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 550px;
+}
+
+.filter-container {
+    margin-bottom: 10px;
+}
+
+.filter-container input[type="text"],
+.filter-container select {
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.filter-container select {
+    min-width: 150px;
+}
+
+.filter-container input[type="text"] {
+    width: 200px;
+}
+
+.data-grid {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.data-grid th {
+    font-size: 18px;
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+    background-color: #f9fafb;
+    font-weight: bold;
+    color: #333;
+}
+
+.data-grid td {
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.data-grid tbody tr:nth-child(even) {
+    background-color: #e1dada;
+}
+
+.data-grid tbody tr:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.pagination {
+    position: absolute;
+    left: 46rem;
+}
+
+.pagination span {
+    font-size: 25px;
+    padding: 10px;
+}
+
+button {
+    padding: 6px;
+    background: linear-gradient(270deg, #984343 0%, #43ceb2 100%);
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.total-pages {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1080px) {
+    .data-grid-container h1 {
+        width: 500px;
+        margin-bottom: 15px;
+        margin-left: 315px;
+        height: 30px;
+    }
+
+    .data-grid-container {
+        top: 5rem;
+    }
+
+    .filter-container {
+        margin-left: 270px;
+    }
+
+    .pagination {
+        bottom: -0.7rem;
+        left: 28rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .data-grid-container h1 {
+        width: 500px;
+        margin-bottom: 15px;
+        margin-left: 120px;
+        height: 30px;
+    }
+
+    .data-grid-container {
+        top: 5rem;
+    }
+
+    .filter-container {
+        margin-left: 70px;
+    }
+
+    .pagination {
+        bottom: -0.7rem;
+        left: 20rem;
+    }
+}
+
+@media screen and (max-width: 584px) {
+    .data-grid-container h1 {
+        width: 300px;
+        margin-bottom: 15px;
+        margin-left: 120px;
+        height: 30px;
+    }
+
+    .data-grid-container {
+        top: 6rem;
+    }
+
+    .filter-container {
+        margin-left: 40px;
+    }
+
+    .pagination {
+        bottom: -0.7rem;
+        left: 14rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .data-grid-container h1 {
+        width: 275px;
+        margin-bottom: 15px;
+        margin-left: 48px;
+        height: 30px;
+    }
+
+    .data-grid-container {
+        top: 6rem;
+    }
+
+    .filter-container {
+        width: 280px;
+        margin-left: 47px;
+    }
+
+    .data-grid {
+        width: 50%;
+    }
+
+    .filter-container input[type="text"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .filter-container select {
+        width: 105%;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+
+    .data-grid td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .pagination {
+        left: 9rem;
+        bottom: -0.5rem;
+    }
+
+    .pagination button {
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    .total-pages {
+        font-size: 16px;
+    }
+}
