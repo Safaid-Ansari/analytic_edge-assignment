@@ -2,7 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Hosted Link: https://analytics-edge.onrender.com/
 ## Available Scripts
+1: Clone the repository 
 
 In the project directory, you can run:
 
